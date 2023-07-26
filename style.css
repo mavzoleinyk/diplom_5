@@ -775,23 +775,128 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
 }
 
 
-/* WOOCOMERCE */
-.quantity{
-    margin-right: 30px;
-}
-.wpex-quantity-btns{
+/* WOOCOMMERCE */
+.woocommerce-breadcrumb{
     display: none;
 }
-.quantity .input-text{
-    margin-bottom: 0;
-    max-width: 50px;
+.grid-products{
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
-.single_add_to_cart_button{
-    padding: 11px 15px;
+.summary.entry-summary .cart{
+    display: none;
+}
+.add_to_cart_button{
+    display: none;
+}
+.grid-products .grid-products-item{
+    padding: 5px;
+    box-shadow: 0px 20px 50px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border: 1px solid #E9EDEF;
+}
+.grid-products .grid-products-item .star-rating{
+    display: none;
+}
+.grid-products .grid-products-item .astra-shop-thumbnail-wrap{
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.grid-products .grid-products-item .astra-shop-summary-wrap{
+    padding: 15px;
+}
+.grid-products .grid-products-item .ast-woo-product-category{
+    font-size: 12px;
+    background-color: #65baff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.grid-products .grid-products-item .woocommerce-loop-product__title{
+    font-size: 18px;
+    min-height: 100px;
+}
+.grid-products .grid-products-item .price{
+    color: #0070D7;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.grid-products .grid-products-item .btn-product{
+    background-color: #0070D7;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.woocommerce-pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 50px 0;
+}
+.woocommerce-pagination .page-numbers{
+    display: flex;
+}
+.woocommerce-pagination .page-numbers li{
+    margin-right: 5px;
+}
+.woocommerce-pagination .page-numbers li span{
+    background-color: #65baff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.woocommerce-pagination .page-numbers li a{
+    background-color: #0070D7;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.single-product h1{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.single-product .price{
+    color: #0070D7;
+    font-size: 26px;
+    font-weight: bold;
+}
+.single-product .btn-product{
+    background-color: #0070D7;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    max-width: 250px;
     width: 100%;
-    max-width: 200px;
+    margin-bottom: 15px;
 }
-/* WOOCOMERCE / */
+.woocommerce-tabs{
+    margin-top: 50px;
+}
+.woocommerce-tabs .tabs{
+    display: flex;
+}
+.woocommerce-tabs .tabs li{
+    margin-right: 20px;
+}
+.woocommerce-tabs .tabs li a{
+    font-size: 16px;
+}
+/* WOOCOMMERCE / */
 
 /* Адаптация уневерсальная */
 @media only screen and (max-width: 1200px) {
